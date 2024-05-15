@@ -2,7 +2,7 @@
 const admin = require("firebase-admin");
 
 // Importing the service account credentials
-const serviceAccount = require("./serviceAccount.json");
+const serviceAccount = require("/etc/secrets/serviceAccount.json");
 
 // Initializing the Firebase Admin SDK with the service account credentials
 admin.initializeApp({
