@@ -54,6 +54,6 @@ app.use("/user/*", async(req, res, next) => {
 app.use("/",publicRoutes);
 app.use("/user",userRoutes);
 
-app.listen(process.env.PORT, () => {
-    console.log(`server started at port ${process.env.PORT}`)
+app.listen(process.env.PORT || 4000, () => {
+    console.log(`server started at port ${process.env.PORT || 4000}`)
 })
