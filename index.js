@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI).then(() => {
 
 //middleware
 app.use(cors({
-    origin: ["http://localhost:3000"]
+    origin: ["http://localhost:3000","https://master--intershala-assignment-frontend.netlify.app"]
 }))
 
 // parse JSON request bodies up to 50MB in size
